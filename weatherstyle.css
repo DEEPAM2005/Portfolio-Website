@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(4, 4, 37);
+}
+
+header{
+    background-color: rgb(4, 4, 37);
+    height: 10vh;
+    width: auto;
+    /* border: 2px solid white; */
+}
+main{
+    background-color: rgb(4, 4, 37);
+    height: 90vh;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top{
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    /* flex-direction: column; */
+    color: antiquewhite;
+    padding-top: 30px;
+    font-weight: 500;
+    font-size: 20px;
+    /* text-shadow: 4px 1px 5px aqua; */
+}
+.top h1{
+    border-bottom: 3px solid aqua;
+}
+.top span{
+    color: aqua;
+}
+
+.card{
+    height: 68vh;
+    width: 30vw;
+    position: relative;
+    top: 5vh;
+    background: linear-gradient(135deg, #00feba,#5b548a);
+    color: white;
+    padding: 30px 30px;
+    text-align: center;
+    border-radius: 20px;
+    /* box-shadow: 5px 5px 10px green; */
+}
+.search{
+    font-weight: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow:'auto';
+}
+.search button{
+    height: 50px;
+    width: 50px;
+    /* border: 2px solid black; */
+    border-radius: 50%;
+    cursor: pointer;
+    overflow: hidden;
+}
+.search button img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    cursor: pointer;
+}
+.search input{
+    background: antiquewhite;
+    color: gray;
+    padding: 10px 25px;
+    height: 42px;
+    border-radius: 30px;
+    margin-right: 16px;
+    flex: 1;
+    font-size: 18px;
+}
+.weather{
+    height: 40vh;
+    width: 20vw;
+    padding-left: 5vw;
+    
+
+}
+.weather_img{
+    height: 25vh;
+    width: 20vw;
+    overflow: hidden;
+}
+.weather img{
+    height: 100%;
+    width: 100%;
+    
+    object-fit: contain;
+}
+.weather h1{
+    color: white;
+    font-size: 60px;
+    font-weight: 500;
+}
+.weather h2{
+    color: white;
+    font-size: 30px;
+    font-weight: 400;
+}
+.details{
+    height:23vh ;
+    width:30vw ;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-around;
+    /* padding: 0 20px; */
+    align-items: center;
+}
+.col{
+    height: 18vh;
+    width: 10vw;
+    /* border: 2px solid black; */
+}
+
+.oth-img{
+    width: 10vw;
+    height:12vh ;
+    overflow: hidden;
+}
+.oth-img img{
+    width: 80%;
+    height: 100%;
+    object-fit: contain;
+}
+.error{
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    display: none;
+    color: blue;
+}
+@media only screen and (max-width:400px){
+    .card{
+        width: 300px;
+        height: 490px;
+        padding: 0px 5px;
+    }
+    .search input{
+        width: 270px;
+        height: 20px;
+    }
+    .search img{
+        width: 150px;
+        height: 60px;
+        border-radius: 50%;
+    }
+    .weather{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        position: relative;
+        left: 70px;
+        top: -20px;
+    }
+    .weather_img{
+        height: 70px;
+        width: 70px;
+    }
+    .details{
+        display: flex;
+        width: 230px;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        left: 30px;
+        top: -35px;
+    }
+    
+    .oth-img{
+        height: 50px;
+        width: 80px;
+    }
+    .humidity{
+        font-size: 30px;
+        position: relative;
+        left: 20px;
+    }
+}
+@media (max-width:1200px){
+
+    body{
+        width: 100vw;
+    }
+
+    .card{
+        width: 90%;
+    }
+    .weather{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        position: relative;
+        left: 25%;
+        padding-left: 50px;
+    }
+    .details{
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 20px;
+        
+    }
+    
+}

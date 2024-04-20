@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="weatherstyle.css">
+    <title>Weather App</title>
+    
+</head>
+<body>
+    <header>
+        <div class="top">
+            <h1>WEA<span>TH</span>ER A<span>P</span>I</h1>
+        </div>
+
+    </header>
+    <main>
+    <div class="card">
+        <div class="search" >
+            <input type="text" placeholder="Enter City Name:">
+            <button><img src="img/search-removebg-preview.png" alt=""></button>
+        </div>
+        <div class="error">
+            <p>Invalid city name.</p>
+        </div>
+        <div class="weather">
+            <div class="weather_img">
+            <img src="img/clear-rembag.png" class="weather-icon"></div>
+            <h1 class="temp">~</h1>
+            <h2 class="city">CITY</h2>
+        </div>
+        <div class="details">
+            <div class="col">
+                <div class="oth-img">
+                    <img src="img/humidity1-removebg-preview.png" alt=""></div>
+                <div>
+                    <p class="humidity">~</p>
+                    <p>Humidity</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="oth-img">
+                <img src="img/windspeed-removebg-preview.png" alt=""></div>
+                <div>
+                    <p class="windspeed">~</p>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<script src="weather.js"></script>
+</body>
+</html>

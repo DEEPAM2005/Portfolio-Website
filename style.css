@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+.slidebar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid red; */
+    padding-left: 5vw;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    
+}
+h1{
+    font-weight: 600;
+}
+h1 span{
+    color: yellow;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    padding-right: 5vw;
+}
+nav ul li{
+    padding: 20px;
+    font-weight: 600;
+    font-size: 18px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    color: orange;
+}
+.main{
+    /* background-color: aqua; */
+    width: 100vw;
+    height: 90vh;
+    padding-top: 5vh;
+}
+.infoContainer{
+    /* background-color: pink; */
+    height: 65vh;
+    width: 80vw;
+    margin: auto ;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devinfo{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+.hello{
+    font-size: 65px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+}
+.name{
+    font-size: 55px;
+    font-weight: bold;
+    font-family: "Source Code Pro", monospace;
+}
+.about{
+    font-size: 50px;
+    /* font-family: "Source Code Pro", monospace; */
+    font-weight: 300;
+}
+.moreabout{
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+}
+.buttons button{
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgb(81, 81, 241);
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+}
+.buttons button:hover{
+    color: rgb(81, 81, 241);
+    background-color: white;
+    cursor: pointer;
+}
+.devpic{
+    height: 65vh;
+    width: 25vw;
+    overflow: hidden;
+    object-fit: cover;
+    padding-bottom: 2px;
+    border-bottom: 3px solid orange;
+    /* border: 2px solid white; */
+}
+.devpic img{
+    height: 100%;
+    width: 100%;
+}
+.devpic:hover{
+    box-shadow: 0px 5px 20px orange;
+}
